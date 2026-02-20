@@ -9,6 +9,8 @@ class Patient(models.Model):
     age = models.IntegerField()
     gender = models.CharField(max_length=10)
     medicalhistory = models.TextField()
+    def __str__(self):
+        return self.fullname
 
 
   
