@@ -51,7 +51,7 @@ def auto_commit_push():
     print("📝 Will auto-commit and push on file changes\n")
     
     while True:
-        time.sleep(2)  # Check every 2 seconds
+        time.sleep(3600)  # Check every 1 hour
         
         changes = get_changed_files()
         
